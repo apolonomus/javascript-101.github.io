@@ -1,0 +1,40 @@
+public class Principal {
+    
+public static void main (String[] args){
+    
+Arqueroprincipiante jugador3 = new Arqueroprincipiante();//Se crea el Arquero principiante 
+MagoInframundo jugador5 = new MagoInframundo();
+
+//Atributos que derivan de la Superclase Humano
+jugador3.nombre = "Dante";
+jugador3.equipo = "Equipo C";
+jugador3.salud = 350;
+
+jugador5.nombre = "Tomás";
+jugador5.equipo = "Equipo F";
+jugador5.salud = 800;
+
+//Atributos que hereda de mi Clase Padre Arquero
+jugador3.cantidadflechas = 366;
+
+//Atributos propios de Arquero Pincipiante
+jugador3.niveles = 450; // Cambio de 600 a 450 pero hereda el atributo
+
+//Atributos heredados de la Clase Padre Mago
+jugador5.tipodemagia = "Negra";
+
+//Atributos propios de MagoIngramundo
+jugador5.niveldemagia = "Letal";
+
+System.out.println("--------------------------------------------");
+System.out.println("----------Perfil del Nuevo Jugador----------");
+System.out.println("--------------------------------------------");
+
+System.out.println("Nombre:"+jugador5.nombre);
+System.out.println("Equipo al que pertenece:"+jugador5.equipo);
+System.out.println("Estado de salud:"+jugador5.salud);
+System.out.println("Tipo de Magia:"+jugador5.tipodemagia);
+System.out.println("Nivel de Magia:"+jugador5.niveldemagia);
+
+}
+}
